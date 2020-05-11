@@ -24,20 +24,20 @@ Installation Instructions
 
 1- Install Librealsense V. 2.29.1 First:
 
-git clone -b v2.29.0 https://github.com/IntelRealSense/librealsense.git
-mkdir  build  && cd build
-cmake .. -DBUILD_EXAMPLES=true -DCMAKE_BUILD_TYPE=Release -DFORCE_LIBUVC=true
+'git clone -b v2.29.0 https://github.com/IntelRealSense/librealsense.git'
+'mkdir  build  && cd build'
+'cmake .. -DBUILD_EXAMPLES=true -DCMAKE_BUILD_TYPE=Release -DFORCE_LIBUVC=true'
 
 IMPORTANT FOR RASPBERRY PI:
 
-cd ~/librealsense
-vim CMakeLists.txt
-Look for config_cxx_flags() - Line 26 usually and add:
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -latomic")
-Click Esc and then type ":wq"
+'cd ~/librealsense'
+'vim CMakeLists.txt'
+* Look for config_cxx_flags() - Line 26 usually and add:
+'set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -latomic")'
+* Click Esc and then type ':wq'
 
-make -j1
-sudo make install
+'make -j1'
+'sudo make install'
 
 (For more info, please follow the steps mentioned in https://github.com/IntelRealSense/librealsense/blob/master/doc/installation_raspbian.md).
 
