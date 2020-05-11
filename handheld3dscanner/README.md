@@ -30,14 +30,14 @@ cmake .. -DBUILD_EXAMPLES=true -DCMAKE_BUILD_TYPE=Release -DFORCE_LIBUVC=true
 
 IMPORTANT FOR RASPBERRY PI:
 
-$ cd ~/librealsense
-$ vim CMakeLists.txt
-# Look for config_cxx_flags() - Line 26 usually and add:
+cd ~/librealsense
+vim CMakeLists.txt
+Look for config_cxx_flags() - Line 26 usually and add:
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -latomic")
-# Click Esc and then type ":wq"
+Click Esc and then type ":wq"
 
-$ make -j1
-$ sudo make install
+make -j1
+sudo make install
 
 (For more info, please follow the steps mentioned in https://github.com/IntelRealSense/librealsense/blob/master/doc/installation_raspbian.md).
 
