@@ -21,7 +21,7 @@ if [ -d ./${gitname} ]; then
 	cd ${gitname}
 	git reset --hard HEAD
 else
-	git clone https://github.com/IntelRealSense/librealsense.git
+	git clone -b v2.29.0 https://github.com/IntelRealSense/librealsense.git
 	cd ${gitname}
 fi
 git checkout -f ${gittag}
