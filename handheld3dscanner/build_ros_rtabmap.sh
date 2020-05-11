@@ -15,6 +15,8 @@ cd ${rtabmap_catkin_ws}/src
 cp -rf ~/ros_catkin_ws/src/catkin .
 
 if [ ! -d ${rtabmap_catkin_ws}/src/realsense-ros ]; then
+# If you would like to change the version which you would like to download: git clone -b
+
 	git clone https://github.com/IntelRealSense/realsense-ros.git
 	cd realsense-ros
 else
