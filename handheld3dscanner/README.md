@@ -26,6 +26,8 @@ Installation Instructions
 
 `git clone -b v2.32.1 https://github.com/IntelRealSense/librealsense.git`
 
+`cd ~/librealsense`
+
 `mkdir  build  && cd build`
 
 `cmake .. -DBUILD_EXAMPLES=true -DCMAKE_BUILD_TYPE=Release -DFORCE_LIBUVC=true`
