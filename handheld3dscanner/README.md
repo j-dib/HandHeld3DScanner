@@ -22,9 +22,9 @@ The installation script does NOT:
 Installation Instructions
 =========================
 
-1- Install Librealsense V. 2.29.1 First:
+1- Install Librealsense V. 2.32.1 First:
 
-'git clone -b v2.29.0 https://github.com/IntelRealSense/librealsense.git'
+'git clone -b v2.32.1 https://github.com/IntelRealSense/librealsense.git'
 
 'mkdir  build  && cd build'
 
