@@ -24,11 +24,11 @@ Installation Instructions
 
 1- Install Librealsense V. 2.32.1 First:
 
-'git clone -b v2.32.1 https://github.com/IntelRealSense/librealsense.git'
+`git clone -b v2.32.1 https://github.com/IntelRealSense/librealsense.git`
 
-'mkdir  build  && cd build'
+`mkdir  build  && cd build`
 
-'cmake .. -DBUILD_EXAMPLES=true -DCMAKE_BUILD_TYPE=Release -DFORCE_LIBUVC=true'
+`cmake .. -DBUILD_EXAMPLES=true -DCMAKE_BUILD_TYPE=Release -DFORCE_LIBUVC=true`
 
 IMPORTANT FOR RASPBERRY PI:
 
